@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+  <h1>Hello {{info.name}} </h1>
+
+  {% if info.age == 21 %}
+    <p>스물하나 부럽다 ...</p>
+  {% endif %}
+
+  <h2>나이는 {{info.age| add:2}} </h2>
+
+  <a href="{% url 'hello' name='matt smith' %}">hello 바로가기</a>
+
+{% endblock content %}
+

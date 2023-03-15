@@ -1,0 +1,22 @@
+day2/
+  day2_problem1/
+	project1/
+            		__init__.py
+            		asgi.py
+            		settings.py
+           		 urls.py
+           		wsgi.py
+        	prices/
+            		migrations/
+            		templates/
+              		price.html
+            		__init__.py
+           		admin.py
+            		apps.py
+            		models.py
+            		tests.py
+		urls.py
+            		views.py
+       	venv/
+       	manage.py
+        	
