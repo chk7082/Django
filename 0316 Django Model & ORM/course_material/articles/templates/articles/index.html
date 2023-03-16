@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <ul>
+    {% for article in articles %}
+      <li>{{ article.id }} {{ article.title }} {{ article.content }}</li>
+    {% endfor %}
+  </ul>
+
+
+  <h1>여기는 인덱스입니다.</h1>
+
+  <form action={% url 'articles:create_article' %} method="GET">
+    <label for="title">title</label>
+    <input type="text" id="title" name="title">
+    {% comment %} <input type="submit"> {% endcomment %}
+    <br>
+
+    <label for="content">content</label>
+    <input type="text" id="content" name="content">
+    <input type="submit">
+  </form>
+
+
+
+
+
+
+{% endblock content %}
