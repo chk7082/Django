@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>CREATE</h1>
+  <hr>
+
+  <form action="{% url 'articles:create' %}" method="POST">
+    {% csrf_token %}
+
+    <label for="title">제목 : </label>
+    <input type="text" id="title" name="title">
+
+    <br>
+
+    <label for="content">내용 : </label>
+    <input type="text" id="content" name="content">
+
+    <br>
+
+    <input type="submit">
+  </form>
+  <hr>
+  <a href="{% url 'articles:index' %}">[back]</a>
+
+
+{% endblock content %}
