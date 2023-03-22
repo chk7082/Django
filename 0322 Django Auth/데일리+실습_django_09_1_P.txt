@@ -1,0 +1,38 @@
+day9
+│
+└── day9_problem1
+    │
+    ├── project1
+    │   │   
+    │   ├── __init__.py
+    │   ├── asgi.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    │   
+    ├── articles/
+    │   
+    ├── accounts
+    │   │   
+    │   ├── migrations/
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── tests.py
+    │   ├── urls.py
+    │   ├── views.py
+    │   └── templates
+    │       │         
+    │       └── accounts
+    │           │   
+    │           └── login.html
+    │       
+    ├── templates
+    │       │         
+    │       └── base.html
+    │       
+    ├── venv/
+    │       
+    ├── db.sqlite3
+    │  
+    └── manage.py
