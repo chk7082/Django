@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>로그인</h1>
+
+  {% comment %} 
+  @login_required 썼을 때,
+  next = 라는 url query param을 쓸 수 있다. -> url에 뜨는거 참고 ㄱㄱ
+  ? url query param: 사용자가 로그인 후 직전 요청으로 갈 수 있게 해주는 주소
+  (원래 원하던 작업)
+  그때, 우리는 로그인 폼의 action을 공백으로 놓아야 한다.
+  {% endcomment %}
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit", value="로그인">
+  </form>
+
+
+{% endblock content %}
